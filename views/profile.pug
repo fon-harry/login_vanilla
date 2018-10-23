@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .container.mt-2
+        .row
+            .col-4
+            .col-4
+                h4.text-center User profile
+                table.table
+                    tbody
+                        each val, index in user
+                            tr
+                                th #{index}
+                                td #{val}
+
+            .col-4

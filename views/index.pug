@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    //h1= title
+    //p Welcome to #{title}
+    //  if {user}
+    if(user)
+        p You are login as
+        a(href="/profile") #{user.name}
+        a(href="/logout") Logout
+    else
+        p You are not signed in
+        a(href="/signin") Sign in
